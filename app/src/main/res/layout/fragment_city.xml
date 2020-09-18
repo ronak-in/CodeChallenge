@@ -56,18 +56,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageHeader"
-            tools:text="Wonder Woman Collections" />
+            tools:text="" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/padding"
-            android:text="@{cityViewModel.weatherData.city.country}"
+            android:text="@{cityViewModel.weatherData.list.get(0).main.temp}"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
             app:layout_constraintStart_toStartOf="@+id/textTitle"
             app:layout_constraintTop_toBottomOf="@+id/textTitle"
-            tools:text="Power. Grace. Wisdom. Wonder." />
+            tools:text="" />
 
         <View
             android:id="@+id/line"
@@ -87,12 +87,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/padding"
             android:layout_marginTop="@dimen/standard_vertical_margin"
-            android:text="@{cityViewModel.weatherData.city.sunrise.toString()}"
+            android:text="@{cityViewModel.weatherData.list.get(0).main.humidity}"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="@+id/guidelineRight"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/line"
-            tools:text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." />
+            tools:text="" />
 
         <ProgressBar
             android:id="@+id/pbLoading"
