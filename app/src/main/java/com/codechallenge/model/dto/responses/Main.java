@@ -33,8 +33,8 @@ public class Main {
     @Expose
     private Double tempKf;
 
-    public Double getTemp() {
-        return temp;
+    public String getTemp() {
+        return "Current Temperature is : " + temp;
     }
 
     public void setTemp(Double temp) {
@@ -89,8 +89,8 @@ public class Main {
         this.grndLevel = grndLevel;
     }
 
-    public Integer getHumidity() {
-        return humidity;
+    public String getHumidity() {
+        return "Current Humidity is: " + humidity;
     }
 
     public void setHumidity(Integer humidity) {
