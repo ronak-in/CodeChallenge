@@ -35,7 +35,7 @@ public class Weather {
     }
 
     public String getDescription() {
-        return description;
+        return "It's feels like: " + description;
     }
 
     public void setDescription(String description) {

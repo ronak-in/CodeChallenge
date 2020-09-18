@@ -12,8 +12,8 @@ public class Wind {
     @Expose
     private Integer deg;
 
-    public Double getSpeed() {
-        return speed;
+    public String getSpeed() {
+        return "Wind Speed is: " + speed + " with degree of: " + deg;
     }
 
     public void setSpeed(Double speed) {

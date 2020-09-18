@@ -94,6 +94,32 @@
             app:layout_constraintTop_toBottomOf="@+id/line"
             tools:text="" />
 
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding"
+            android:layout_marginTop="@dimen/standard_vertical_margin"
+            android:text="@{cityViewModel.weatherData.list.get(0).weather.get(0).description}"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding"
+            android:layout_marginTop="@dimen/standard_vertical_margin"
+            android:text="@{cityViewModel.weatherData.list.get(0).wind.speed}"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:text="" />
+
         <ProgressBar
             android:id="@+id/pbLoading"
             android:layout_width="wrap_content"
