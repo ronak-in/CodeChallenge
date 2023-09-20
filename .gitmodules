@@ -1,0 +1,3 @@
+[submodule "custome_sub_module"]
+	path = customized_sub_module
+	url = git@github.com:ronak-in/BLUEDOVEHealthSystemAndroid.git
